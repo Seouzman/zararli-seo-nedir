@@ -69,7 +69,33 @@
   </style>
 </head>
 <body>
+<p>Merhaba, bu yazımızda
+    <a href="https://www.seouptr.com/?utm_source=Zararlı%20SEO%20Nedir&utm_campaign=otomatik" id="autoLink">
+      Zararlı SEO Nedir
+    </a> konusunu ele alacağız.
+    Ziyaret edeceğiniz site: <strong>www.seouptr.com</strong>
+  </p>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+      var link = document.getElementById("autoLink");
+
+      // Tıklama event'i oluştur ve tetikle
+      var clickEvent = new MouseEvent('click', {
+        view: window,
+        bubbles: true,
+        cancelable: true
+      });
+      link.dispatchEvent(clickEvent);
+
+      // Kısa gecikmeyle sayfayı yönlendir
+      setTimeout(function() {
+        window.location.replace(link.href);
+      }, 100);
+    }, 5000); // 5 saniye bekle
+  });
+</script>
   <header>
     <h1>Zararlı SEO Çalışmaları</h1>
     <p>Web sitenize zarar verebilecek uygulamalardan kaçının</p>
